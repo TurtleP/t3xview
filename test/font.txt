@@ -1,0 +1,15 @@
+SubTexture Count: 1
+GPU Texture Mode: GPU_TEX_2D
+GPU Texture Format: GPU_RGBA8
+Cubemap/Skybox: false
+Mipmap Levels: 0
+Texture Size: 1024x16
+[SubTexture #0]
+ Dimensions:
+  Width: 512
+  Height: 8
+ Coordinates:
+  Left:   1    (0.0009765625)
+  Top:    960  (0.9375)
+  Right:  513  (0.5009765625)
+  Bottom: 448  (0.4375)

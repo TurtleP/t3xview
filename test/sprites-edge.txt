@@ -1,0 +1,510 @@
+SubTexture Count: 56
+GPU Texture Mode: GPU_TEX_2D
+GPU Texture Format: GPU_RGBA8
+Cubemap/Skybox: false
+Mipmap Levels: 0
+Texture Size: 512x256
+[SubTexture #0]
+ Dimensions:
+  Width: 47
+  Height: 42
+ Coordinates:
+  Left:   398  (0.388671875)
+  Top:    492  (0.48046875)
+  Right:  492  (0.48046875)
+  Bottom: 324  (0.31640625)
+[SubTexture #1]
+ Dimensions:
+  Width: 52
+  Height: 42
+ Coordinates:
+  Left:   342  (0.333984375)
+  Top:    844  (0.82421875)
+  Right:  446  (0.435546875)
+  Bottom: 676  (0.66015625)
+[SubTexture #2]
+ Dimensions:
+  Width: 52
+  Height: 42
+ Coordinates:
+  Left:   342   (0.333984375)
+  Top:    1020  (0.99609375)
+  Right:  446   (0.435546875)
+  Bottom: 852   (0.83203125)
+[SubTexture #3]
+ Dimensions:
+  Width: 41
+  Height: 42
+ Coordinates:
+  Left:   16   (0.015625)
+  Top:    656  (0.640625)
+  Right:  180  (0.17578125)
+  Bottom: 740  (0.72265625)
+[SubTexture #4]
+ Dimensions:
+  Width: 49
+  Height: 42
+ Coordinates:
+  Left:   126  (0.123046875)
+  Top:    668  (0.65234375)
+  Right:  224  (0.21875)
+  Bottom: 500  (0.48828125)
+[SubTexture #5]
+ Dimensions:
+  Width: 47
+  Height: 42
+ Coordinates:
+  Left:   104  (0.1015625)
+  Top:    492  (0.48046875)
+  Right:  198  (0.193359375)
+  Bottom: 324  (0.31640625)
+[SubTexture #6]
+ Dimensions:
+  Width: 52
+  Height: 42
+ Coordinates:
+  Left:   234  (0.228515625)
+  Top:    844  (0.82421875)
+  Right:  338  (0.330078125)
+  Bottom: 676  (0.66015625)
+[SubTexture #7]
+ Dimensions:
+  Width: 52
+  Height: 42
+ Coordinates:
+  Left:   234   (0.228515625)
+  Top:    1020  (0.99609375)
+  Right:  338   (0.330078125)
+  Bottom: 852   (0.83203125)
+[SubTexture #8]
+ Dimensions:
+  Width: 41
+  Height: 42
+ Coordinates:
+  Left:   472  (0.4609375)
+  Top:    830  (0.810546875)
+  Right:  636  (0.62109375)
+  Bottom: 914  (0.892578125)
+[SubTexture #9]
+ Dimensions:
+  Width: 49
+  Height: 42
+ Coordinates:
+  Left:   228  (0.22265625)
+  Top:    668  (0.65234375)
+  Right:  326  (0.318359375)
+  Bottom: 500  (0.48828125)
+[SubTexture #10]
+ Dimensions:
+  Width: 47
+  Height: 42
+ Coordinates:
+  Left:   202  (0.197265625)
+  Top:    492  (0.48046875)
+  Right:  296  (0.2890625)
+  Bottom: 324  (0.31640625)
+[SubTexture #11]
+ Dimensions:
+  Width: 52
+  Height: 42
+ Coordinates:
+  Left:   126  (0.123046875)
+  Top:    844  (0.82421875)
+  Right:  230  (0.224609375)
+  Bottom: 676  (0.66015625)
+[SubTexture #12]
+ Dimensions:
+  Width: 52
+  Height: 42
+ Coordinates:
+  Left:   126   (0.123046875)
+  Top:    1020  (0.99609375)
+  Right:  230   (0.224609375)
+  Bottom: 852   (0.83203125)
+[SubTexture #13]
+ Dimensions:
+  Width: 41
+  Height: 42
+ Coordinates:
+  Left:   744  (0.7265625)
+  Top:    180  (0.17578125)
+  Right:  826  (0.806640625)
+  Bottom: 12   (0.01171875)
+[SubTexture #14]
+ Dimensions:
+  Width: 49
+  Height: 42
+ Coordinates:
+  Left:   330  (0.322265625)
+  Top:    668  (0.65234375)
+  Right:  428  (0.41796875)
+  Bottom: 500  (0.48828125)
+[SubTexture #15]
+ Dimensions:
+  Width: 47
+  Height: 42
+ Coordinates:
+  Left:   300  (0.29296875)
+  Top:    492  (0.48046875)
+  Right:  394  (0.384765625)
+  Bottom: 324  (0.31640625)
+[SubTexture #16]
+ Dimensions:
+  Width: 52
+  Height: 42
+ Coordinates:
+  Left:   4    (0.00390625)
+  Top:    90   (0.087890625)
+  Right:  212  (0.20703125)
+  Bottom: 174  (0.169921875)
+[SubTexture #17]
+ Dimensions:
+  Width: 52
+  Height: 42
+ Coordinates:
+  Left:   4    (0.00390625)
+  Top:    2    (0.001953125)
+  Right:  212  (0.20703125)
+  Bottom: 86   (0.083984375)
+[SubTexture #18]
+ Dimensions:
+  Width: 41
+  Height: 42
+ Coordinates:
+  Left:   16   (0.015625)
+  Top:    568  (0.5546875)
+  Right:  180  (0.17578125)
+  Bottom: 652  (0.63671875)
+[SubTexture #19]
+ Dimensions:
+  Width: 49
+  Height: 42
+ Coordinates:
+  Left:   432  (0.421875)
+  Top:    668  (0.65234375)
+  Right:  530  (0.517578125)
+  Bottom: 500  (0.48828125)
+[SubTexture #20]
+ Dimensions:
+  Width: 51
+  Height: 42
+ Coordinates:
+  Left:   450   (0.439453125)
+  Top:    1020  (0.99609375)
+  Right:  552   (0.5390625)
+  Bottom: 852   (0.83203125)
+[SubTexture #21]
+ Dimensions:
+  Width: 60
+  Height: 49
+ Coordinates:
+  Left:   2    (0.001953125)
+  Top:    816  (0.796875)
+  Right:  122  (0.119140625)
+  Bottom: 620  (0.60546875)
+[SubTexture #22]
+ Dimensions:
+  Width: 45
+  Height: 41
+ Coordinates:
+  Left:   670  (0.654296875)
+  Top:    520  (0.5078125)
+  Right:  760  (0.7421875)
+  Bottom: 356  (0.34765625)
+[SubTexture #23]
+ Dimensions:
+  Width: 49
+  Height: 48
+ Coordinates:
+  Left:   2    (0.001953125)
+  Top:    412  (0.40234375)
+  Right:  100  (0.09765625)
+  Bottom: 220  (0.21484375)
+[SubTexture #24]
+ Dimensions:
+  Width: 43
+  Height: 43
+ Coordinates:
+  Left:   556  (0.54296875)
+  Top:    700  (0.68359375)
+  Right:  642  (0.626953125)
+  Bottom: 528  (0.515625)
+[SubTexture #25]
+ Dimensions:
+  Width: 45
+  Height: 40
+ Coordinates:
+  Left:   670  (0.654296875)
+  Top:    348  (0.33984375)
+  Right:  760  (0.7421875)
+  Bottom: 188  (0.18359375)
+[SubTexture #26]
+ Dimensions:
+  Width: 28
+  Height: 28
+ Coordinates:
+  Left:   918  (0.896484375)
+  Top:    516  (0.50390625)
+  Right:  974  (0.951171875)
+  Bottom: 404  (0.39453125)
+[SubTexture #27]
+ Dimensions:
+  Width: 29
+  Height: 26
+ Coordinates:
+  Left:   736  (0.71875)
+  Top:    636  (0.62109375)
+  Right:  794  (0.775390625)
+  Bottom: 532  (0.51953125)
+[SubTexture #28]
+ Dimensions:
+  Width: 18
+  Height: 18
+ Coordinates:
+  Left:   488  (0.4765625)
+  Top:    84   (0.08203125)
+  Right:  524  (0.51171875)
+  Bottom: 12   (0.01171875)
+[SubTexture #29]
+ Dimensions:
+  Width: 16
+  Height: 15
+ Coordinates:
+  Left:   528  (0.515625)
+  Top:    84   (0.08203125)
+  Right:  560  (0.546875)
+  Bottom: 24   (0.0234375)
+[SubTexture #30]
+ Dimensions:
+  Width: 51
+  Height: 42
+ Coordinates:
+  Left:   450  (0.439453125)
+  Top:    844  (0.82421875)
+  Right:  552  (0.5390625)
+  Bottom: 676  (0.66015625)
+[SubTexture #31]
+ Dimensions:
+  Width: 60
+  Height: 49
+ Coordinates:
+  Left:   2     (0.001953125)
+  Top:    1020  (0.99609375)
+  Right:  122   (0.119140625)
+  Bottom: 824   (0.8046875)
+[SubTexture #32]
+ Dimensions:
+  Width: 45
+  Height: 41
+ Coordinates:
+  Left:   576  (0.5625)
+  Top:    520  (0.5078125)
+  Right:  666  (0.650390625)
+  Bottom: 356  (0.34765625)
+[SubTexture #33]
+ Dimensions:
+  Width: 49
+  Height: 48
+ Coordinates:
+  Left:   2    (0.001953125)
+  Top:    612  (0.59765625)
+  Right:  100  (0.09765625)
+  Bottom: 420  (0.41015625)
+[SubTexture #34]
+ Dimensions:
+  Width: 43
+  Height: 43
+ Coordinates:
+  Left:   646  (0.630859375)
+  Top:    700  (0.68359375)
+  Right:  732  (0.71484375)
+  Bottom: 528  (0.515625)
+[SubTexture #35]
+ Dimensions:
+  Width: 45
+  Height: 40
+ Coordinates:
+  Left:   576  (0.5625)
+  Top:    348  (0.33984375)
+  Right:  666  (0.650390625)
+  Bottom: 188  (0.18359375)
+[SubTexture #36]
+ Dimensions:
+  Width: 28
+  Height: 28
+ Coordinates:
+  Left:   918  (0.896484375)
+  Top:    636  (0.62109375)
+  Right:  974  (0.951171875)
+  Bottom: 524  (0.51171875)
+[SubTexture #37]
+ Dimensions:
+  Width: 29
+  Height: 26
+ Coordinates:
+  Left:   408  (0.3984375)
+  Top:    764  (0.74609375)
+  Right:  524  (0.51171875)
+  Bottom: 816  (0.796875)
+[SubTexture #38]
+ Dimensions:
+  Width: 18
+  Height: 18
+ Coordinates:
+  Left:   104  (0.1015625)
+  Top:    316  (0.30859375)
+  Right:  140  (0.13671875)
+  Bottom: 244  (0.23828125)
+[SubTexture #39]
+ Dimensions:
+  Width: 16
+  Height: 15
+ Coordinates:
+  Left:   252  (0.24609375)
+  Top:    144  (0.140625)
+  Right:  316  (0.30859375)
+  Bottom: 174  (0.169921875)
+[SubTexture #40]
+ Dimensions:
+  Width: 50
+  Height: 38
+ Coordinates:
+  Left:   178  (0.173828125)
+  Top:    316  (0.30859375)
+  Right:  278  (0.271484375)
+  Bottom: 164  (0.16015625)
+[SubTexture #41]
+ Dimensions:
+  Width: 50
+  Height: 38
+ Coordinates:
+  Left:   178  (0.173828125)
+  Top:    156  (0.15234375)
+  Right:  278  (0.271484375)
+  Bottom: 4    (0.00390625)
+[SubTexture #42]
+ Dimensions:
+  Width: 50
+  Height: 38
+ Coordinates:
+  Left:   282  (0.275390625)
+  Top:    316  (0.30859375)
+  Right:  382  (0.373046875)
+  Bottom: 164  (0.16015625)
+[SubTexture #43]
+ Dimensions:
+  Width: 50
+  Height: 38
+ Coordinates:
+  Left:   282  (0.275390625)
+  Top:    156  (0.15234375)
+  Right:  382  (0.373046875)
+  Bottom: 4    (0.00390625)
+[SubTexture #44]
+ Dimensions:
+  Width: 56
+  Height: 38
+ Coordinates:
+  Left:   672  (0.65625)
+  Top:    860  (0.83984375)
+  Right:  784  (0.765625)
+  Bottom: 708  (0.69140625)
+[SubTexture #45]
+ Dimensions:
+  Width: 56
+  Height: 38
+ Coordinates:
+  Left:   672   (0.65625)
+  Top:    1020  (0.99609375)
+  Right:  784   (0.765625)
+  Bottom: 868   (0.84765625)
+[SubTexture #46]
+ Dimensions:
+  Width: 56
+  Height: 38
+ Coordinates:
+  Left:   556  (0.54296875)
+  Top:    860  (0.83984375)
+  Right:  668  (0.65234375)
+  Bottom: 708  (0.69140625)
+[SubTexture #47]
+ Dimensions:
+  Width: 56
+  Height: 38
+ Coordinates:
+  Left:   556   (0.54296875)
+  Top:    1020  (0.99609375)
+  Right:  668   (0.65234375)
+  Bottom: 868   (0.84765625)
+[SubTexture #48]
+ Dimensions:
+  Width: 49
+  Height: 38
+ Coordinates:
+  Left:   92   (0.08984375)
+  Top:    488  (0.4765625)
+  Right:  288  (0.28125)
+  Bottom: 564  (0.55078125)
+[SubTexture #49]
+ Dimensions:
+  Width: 49
+  Height: 38
+ Coordinates:
+  Left:   296  (0.2890625)
+  Top:    496  (0.484375)
+  Right:  492  (0.48046875)
+  Bottom: 572  (0.55859375)
+[SubTexture #50]
+ Dimensions:
+  Width: 49
+  Height: 38
+ Coordinates:
+  Left:   386  (0.376953125)
+  Top:    156  (0.15234375)
+  Right:  484  (0.47265625)
+  Bottom: 4    (0.00390625)
+[SubTexture #51]
+ Dimensions:
+  Width: 49
+  Height: 38
+ Coordinates:
+  Left:   386  (0.376953125)
+  Top:    316  (0.30859375)
+  Right:  484  (0.47265625)
+  Bottom: 164  (0.16015625)
+[SubTexture #52]
+ Dimensions:
+  Width: 46
+  Height: 46
+ Coordinates:
+  Left:   884  (0.86328125)
+  Top:    828  (0.80859375)
+  Right:  976  (0.953125)
+  Bottom: 644  (0.62890625)
+[SubTexture #53]
+ Dimensions:
+  Width: 46
+  Height: 46
+ Coordinates:
+  Left:   788  (0.76953125)
+  Top:    828  (0.80859375)
+  Right:  880  (0.859375)
+  Bottom: 644  (0.62890625)
+[SubTexture #54]
+ Dimensions:
+  Width: 46
+  Height: 46
+ Coordinates:
+  Left:   884   (0.86328125)
+  Top:    1020  (0.99609375)
+  Right:  976   (0.953125)
+  Bottom: 836   (0.81640625)
+[SubTexture #55]
+ Dimensions:
+  Width: 46
+  Height: 46
+ Coordinates:
+  Left:   788   (0.76953125)
+  Top:    1020  (0.99609375)
+  Right:  880   (0.859375)
+  Bottom: 836   (0.81640625)

@@ -3,29 +3,52 @@ import cligen
 import strformat
 import strutils
 import tables
-import sequtils
 import os
 
-import header
+import t3xheader
+import strings
+import enums
 
 const Version = staticRead("../t3xview.nimble").fromNimble("version")
 
-proc getPowTwo(x: uint16): int =
-    return cast[int](1 shl x)
+proc getPowTwoDimensions(x: uint16, y: uint16): auto =
+    return (width: cast[int](1 shl x), height: cast[int](1 shl y))
 
-proc getSubtextureCorner(x: uint16): float =
-    x.float / 1024.float
+proc longest(values: auto): int =
+    for corner in values:
+        let strCorner = $corner.norm
+        if len(strCorner) > result:
+            result = len(strCorner)
 
-proc alignment(keys: seq[string]): int =
-    var longest: int = 0
+proc getSubtextureCorners(x: Tex3dsSubtexture): auto =
+    let corners = @[x.left, x.top, x.right, x.bottom]
+    var values = newSeq[tuple[norm: uint16, subc: float]]()
 
-    for key in keys:
-        if len(key) > longest:
-            longest = len(key)
+    for corner in corners:
+        values.add((corner, corner.float / 1024.float))
 
-    return longest + 1
+    return values
 
-proc info(filepath: string) =
+var filename: string
+var useFile: bool
+
+proc fileEcho(value: string) =
+    var file: File = stdout
+
+    if useFile:
+        var mode: FileMode = fmWrite
+        if fileExists(filename):
+            mode = fmAppend
+
+        file = open(filename, mode)
+
+    writeLine(file, value)
+    flushFile(file)
+
+    if useFile:
+        file.close()
+
+proc info(filepath: string, dump: bool = false) =
     ## Get the info of the tex3ds texture
 
     if not fileExists(filepath):
@@ -34,33 +57,38 @@ proc info(filepath: string) =
 
     let bin = toTex3dsHeader(readFile(filepath))
 
-    let coordinates = {"Left": bin.left, "Top": bin.top, "Right": bin.right,
-            "Bottom": bin.bottom}.toTable()
-    let coordalign = alignment(coordinates.keys().toSeq())
+    if dump:
+        useFile = true
+        let (_, name, _) = splitFile(filepath)
+        filename = fmt"{name}.txt"
 
-    let dimensions = {"Width": @[bin.width, bin.width_log2], "Height": @[
-            bin.height, bin.height_log2]}.toTable()
-    let dimsalign = alignment(dimensions.keys().toSeq())
+    fileEcho(SubTextureCount.format(bin.numSubTextures))
+    fileEcho(GPUTextureMode.format(GPU_TEXTURE_MODE_PARAM(bin.gpuTexType)))
+    fileEcho(GPUTextureFormat.format(GPU_TEXCOLOR(bin.gpuTexFormat)))
+    fileEcho(CubeMapSkyBox.format(bool(bin.gpuTexType and (1 shl 6))))
+    fileEcho(MipMapLevels.format(bin.mipmapLevels))
 
-    echo fmt"Subtexture Count: {bin.subTextures}"
-    echo "Texture Dimensions"
-    for key, value in dimensions.pairs():
-        let spacing = " ".repeat(coordalign - len(key))
-        echo(fmt"  {key}:{spacing}{value[0]} ({getPowTwo(value[1] + 3)})")
+    let powTwoSize = getPowTwoDimensions(bin.width_log2 + 3, bin.height_log2 + 3)
+    fileEcho(TextureSize.format(powTwoSize.width, powTwoSize.height))
 
-    echo fmt"GPU_TEXTURE_MODE_PARAM: {bin.gpuTexType}"
-    echo fmt"GPU_TEXCOLOR: {bin.gpuTexFormat}"
-    echo fmt"Mipmap Levels: {bin.mipmapLevels}"
+    for index in 0 ..< bin.numSubTextures.int:
+        fileEcho(SubTextureIndex.format(index))
+        fileEcho(SubTextureDimensions)
+        fileEcho(SubTextureSize.format(bin.subTextures[index].width,
+                bin.subTextures[index].height))
+        fileEcho(SubTextureCoordinates)
 
-    echo "Subtexture Coordinates:"
-    for key, value in coordinates.pairs():
-        let spacing = " ".repeat(dimsalign - len(key))
-        echo(fmt"  {key}:{spacing}{value} ({getSubtextureCorner(value)})")
+        let corners = getSubtextureCorners(bin.subTextures[index])
+        let padding = longest(corners) + 1
+
+        for index, corner in corners.pairs():
+            let aligned = alignLeft($corner.norm, padding)
+            fileEcho(SubTextureCoordinateInfo[index].format(aligned, corner.subc))
 
 proc version() =
     ## Print version number and exit
 
     echo(Version)
 
-dispatchMulti([info, help = {"filepath": "path to the tex3ds generated file"}],
-        [version])
+dispatchMulti([info, help = {"filepath": "path to the tex3ds generated file",
+        "dump": "whether to dump output to a file"}], [version])
